@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clínica dos Computadores e Celulares</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', Arial, sans-serif; margin: 0; background: #f8fafc; color: #333; }
+    header { background: linear-gradient(90deg, #0d47a1, #1976d2); color: #fff; padding: 30px 20px; text-align: center; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+    header h1 { font-family: 'Montserrat', sans-serif; font-size: 2.5rem; font-weight: 700; margin: 0; }
+    nav { background: #1976d2; display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+    nav a { color: #fff; text-decoration: none; font-weight: 600; padding: 6px 14px; border-radius: 6px; transition: all 0.3s ease; font-family: 'Montserrat', sans-serif; }
+    nav a:hover { background: #0d47a1; color: #ffeb3b; }
+    main { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+    section { margin-bottom: 50px; }
+    h2 { color: #0d47a1; margin-bottom: 20px; font-size: 1.8rem; font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .service-card { background: #fff; border-radius: 14px; padding: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; border: 1px solid #e0e0e0; }
+    .service-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,0.15); }
+    .service-card h3 { color: #0d47a1; font-family: 'Montserrat', sans-serif; font-size: 1.25rem; margin-bottom: 10px; font-weight: 600; }
+    .service-card p { font-weight: 400; color: #555; line-height: 1.5; font-family: 'Poppins', sans-serif; }
+    .service-card p strong { color: #0d47a1; font-weight: 700; }
+    .whatsapp-button { position: fixed; bottom: 20px; right: 20px; background-color: #25d366; border-radius: 50%; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 1000; transition: transform 0.3s ease; }
+    .whatsapp-button:hover { transform: scale(1.05); }
+    .whatsapp-button img { width: 38px; height: 38px; }
+    .aviso { background: #e53935; color: #fff; padding: 12px; font-size: 1.2rem; font-weight: 700; white-space: nowrap; overflow: hidden; box-sizing: border-box; font-family: 'Montserrat', sans-serif; border-radius: 4px; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); }
+    .aviso span { display: inline-block; padding-left: 100%; animation: marquee 12s linear infinite; }
+    @keyframes marquee { 0% { transform: translate(0, 0); } 100% { transform: translate(-100%, 0); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Clínica dos Computadores e Celulares</h1>
+  </header>
+  <nav>
+    <a href="#celulares">Celulares</a>
+    <a href="#notebooks">Notebooks e Computadores</a>
+    <a href="#videogames">Videogames</a>
+  </nav>
+  <main>
+    <div class="aviso"><span>ATENÇÃO: Não trabalhamos com peça ou troca de telas.</span></div>
+    <section id="celulares">
+      <h2>📱 Serviços para Celulares</h2>
+      <div class="services">
+        <div class="service-card"><h3>Formatação e Restauração</h3><p>Deixe seu celular como novo com nossos serviços de formatação e restauração. <strong>De R$ 80,00 por R$ 60,00</strong></p></div>
+        <div class="service-card"><h3>Desbloqueio de Conta Google</h3><p>Recupere o acesso ao seu dispositivo com desbloqueio seguro da conta Google. <strong>De R$ 100,00 por R$ 80,00</strong></p></div>
+        <div class="service-card"><h3>Desbloqueio de Senha Padrão e PIN</h3><p>Esqueceu a senha ou PIN? A gente resolve rápido e sem complicação. <strong>De R$ 90,00 por R$ 70,00</strong></p></div>
+        <div class="service-card"><h3>Instalação de Sistemas</h3><p>Atualização e instalação de sistemas operacionais para celulares. <strong>De R$ 80,00 por R$ 60,00</strong></p></div>
+        <div class="service-card"><h3>Instalação de Jogos</h3><p>Deixe seu celular pronto para jogar com instalação de seus jogos favoritos. <strong>De R$ 70,00 por R$ 50,00</strong></p></div>
+      </div>
+    </section>
+    <section id="notebooks">
+      <h2>💻 Serviços para Notebooks e Computadores</h2>
+      <div class="services">
+        <div class="service-card"><h3>Formatação e Restauração</h3><p>Deixe seu PC limpo e rápido com formatação e restauração profissional. <strong>De R$ 100,00 por R$ 80,00</strong></p></div>
+        <div class="service-card"><h3>Troca de HD</h3><p>Substituição de discos rígidos para melhorar a performance ou ampliar armazenamento. <strong>De R$ 150,00 por R$ 130,00</strong></p></div>
+        <div class="service-card"><h3>Atualização de Sistema</h3><p>Atualização dos sistemas operacionais para maior segurança e eficiência. <strong>De R$ 90,00 por R$ 70,00</strong></p></div>
+        <div class="service-card"><h3>Instalação de Drivers</h3><p>Configuração e instalação de drivers essenciais para seu hardware. <strong>De R$ 60,00 por R$ 40,00</strong></p></div>
+        <div class="service-card"><h3>Instalação de Programas</h3><p>Fazemos instalação de programas. <strong>De R$ 80,00 por R$ 60,00</strong></p></div>
+        <div class="service-card"><h3>Instalação de Jogos para PC</h3><p>Fazemos instalação de jogos para PC. <strong>De R$ 90,00 por R$ 70,00</strong></p></div>
+        <div class="service-card"><h3>Instalação de Sistemas Windows</h3><p>Windows 7 (32 ou 64 bits), Windows 8 (32 ou 64 bits), Windows 10 (32 ou 64 bits), Windows 11 (32 ou 64 bits). <strong>De R$ 120,00 por R$ 100,00</strong></p></div>
+      </div>
+    </section>
+    <section id="videogames">
+      <h2>🎮 Serviços para Videogames</h2>
+      <div class="services">
+        <div class="service-card"><h3>Formatação e Restauração</h3><p>Fazemos formatação ou restauração do seu PS3 ou PS4 para o estado de fábrica. <strong>De R$ 100,00 por R$ 80,00</strong></p></div>
+        <div class="service-card"><h3>Instalação de Jogos</h3><p>Fazemos instalação de jogos no seu PS3 desbloqueado. <strong>De R$ 80,00 por R$ 60,00</strong></p></div>
+        <div class="service-card"><h3>Desbloqueio de PS3</h3><p>Fazemos desbloqueio somente de PS3 para ter acesso a milhares de jogos grátis. <strong>De R$ 120,00 por R$ 100,00</strong></p></div>
+      </div>
+    </section>
+  </main>
+  <a class="whatsapp-button" href="https://wa.me/5593981035327" target="_blank" title="Fale conosco no WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+</body>
+</html>
